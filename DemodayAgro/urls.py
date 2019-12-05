@@ -19,5 +19,8 @@ from Agrodoce import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',views.inicio),
+    path('/home',views.home),
+    path('/sobre', views.sobre),
+    path('/contato', views.contato),
+    path('/login', views.login),
 ]
