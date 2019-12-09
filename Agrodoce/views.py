@@ -1,4 +1,6 @@
 from django.shortcuts import render
+from Agrodoce.forms import CadastroForm
+from Agrodoce.models import *
 
 # Create your views here.
 
@@ -16,3 +18,16 @@ def login(request):
 
 def sobre(request):
     return render(request , 'sobre.html')
+
+def cadastro(request):
+    form = CadastroForm(request.POST or None)
+    if form.is_valid():
+        form.save()
+        context = {
+            'msg': 'Cadastro realizado com sucesso'
+        }
+        return render (request , 'cadastro.html', context)
+    context = {
+        'formulario' : form
+    }
+    return render (request , 'cadastro.html' , context)

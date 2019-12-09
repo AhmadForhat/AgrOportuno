@@ -1,0 +1,18 @@
+{% extends 'index.html' %}
+{% load static %}
+
+{% block content %}
+
+    <h1>Faça seu cadastro</h1>
+    {% if formulario %}
+    <form method="POST">
+        {% csrf_token %}
+        {{formulario}}
+        <button>Cadastrar</button>
+    </form>
+    {% endif %}
+    {% if msg %}
+        <h2>{{msg}}</h2>
+    {% endif %}
+
+{% endblock %}
