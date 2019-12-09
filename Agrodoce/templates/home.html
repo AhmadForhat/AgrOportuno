@@ -1,2 +1,31 @@
 {% extends 'index.html' %}
 {% load static %}
+
+{% block content %}
+<section class="blockNav">
+    <a href="#blockNav"><button>Cadastre-se</button></a>
+</section>
+<section class="sobreHome">
+    <h2>Sobre</h2>
+    <div class="texto-sobre">
+        <img src="../static/img/icon-sobre.png" alt="">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi velit orci, dapibus quis pellentesque nec, feugiat eget neque. Vivamus tristique et orci sit amet pretium. Duis sed sem et mi consequat semper. Integer tempor, elit eu dictum porta, metus quam sagittis augue, sed finibus est turpis quis sapien. Nam tempus urna vitae tellus elementum convallis. Morbi suscipit rhoncus purus eget viverra. Fusce congue quis erat ut consequat. Quisque molestie lorem nec nunc pretium, sed congue ligula vulputate. Fusce auctor dapibus nulla ut venenatis. Maecenas eleifend ut arcu sit amet porttitor. Suspendisse efficitur, turpis ac pulvinar rutrum, massa diam lobortis lectus, id semper dolor quam nec metus. Integer at finibus ex. Fusce convallis nisi at est viverra consequat.</p>
+     </div>
+    <div class="slide-home">
+        <img src="../static/img/slide1.png" alt="">
+        <img class ="none" src="" alt="">
+        <img class ="none" src="" alt="">
+        <img class ="none" src="" alt="">
+        <div class="setas">
+            <img class="setaEsquerda" src="../static/img/setaEsquerda.svg" alt="">
+            <img class="setaDireita" src="../static/img/setaDireita.svg" alt=""></div>
+        </div>
+    <div class="bolinhas">
+        <p class="bolinha"></p>
+        <p class="bolinha"></p>
+        <p class="bolinha"></p>
+        <p class="bolinha"></p>
+    </div>
+    <button>Saiba Mais</button>
+</section>
+{% endblock%}
