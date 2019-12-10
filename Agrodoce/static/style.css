@@ -9,6 +9,13 @@ h2 {
     font-size: 48px;
     font-family: 'Dancing Script', cursive;
     color: #DD8D1F;
+    align-self: flex-start;
+    margin-left: 5%;
+}
+
+h3 {
+    font-size:24px;
+    color: #707070;
 }
 
 nav {
@@ -44,7 +51,7 @@ button{
     height: 45px;
     width: 120px;
     border: none;
-    border-radius:25%;
+    border-radius:30px;
     color:white;
     font-size: 22px;
     font-family: 'Roboto', sans-serif;
@@ -70,7 +77,6 @@ button:hover{
     margin-bottom: 80px;
     width: 200px;
     height: 55px;
-    border-radius:15%;
 }
 
 .sobreHome{
@@ -78,10 +84,6 @@ button:hover{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-.sobreHome h2{
-    align-self: flex-start;
-    margin-left: 5%;
 }
 
 .texto-sobre{
@@ -129,14 +131,13 @@ button:hover{
 .sobreHome button{
     width: 25%;
     height: 65px;
-    border-radius: 8%;
 }
 
 .setas{
     height: 40px;
 }
 
-.setadireita{
+.setaDireita{
     display:flex;
     position: relative;
     left: 560px;
@@ -164,4 +165,28 @@ button:hover{
 
 .none{
     display:none;
+}
+
+.time{
+    display:flex;
+    justify-content: space-around;
+    align-items:center;
+    text-align: center;
+}
+
+.redes-sociais img:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+footer{
+    margin-top:40px;
+    display:flex;
+    color: white;
+    background-color: #DD8D1F;
+    height: 60px;
+    width: 100%;
+    opacity: 90%;
+    text-align: center;
+    justify-content: center;
 }
