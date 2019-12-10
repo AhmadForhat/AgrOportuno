@@ -245,3 +245,24 @@ footer{
     text-align: center;
     justify-content: center;
 }
+
+.h2-cadastro{
+    margin-top: 7%;
+}
+
+form {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form input {
+    width: 80%;
+    height: 25px;
+}
+
+form select {
+    width: 80%;
+    height: 35px;
+}
