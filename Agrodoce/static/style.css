@@ -179,6 +179,61 @@ button:hover{
     cursor: pointer;
 }
 
+.login input{
+    border-radius: 30px;
+    border: 4px solid #7CB342;
+    color: #DD8D1F;
+    width: 1100px;
+    height: 40px;
+    align-self: center;
+    background-color: #F3EDE4;
+    margin-bottom: 20px;
+ }
+ 
+ .login{
+     display: flex;
+     flex-direction: column;
+     margin-top: 10%;
+     
+ 
+ }
+ 
+ .login label{
+     color:#DD8D1F;
+     margin-left: 10%;
+     margin-bottom: 2%;
+     margin-top: 2%;
+     font-size: 140%;   
+ }
+ 
+ .btn-login{
+     display: flex;
+     justify-content: center;
+ }
+ 
+ .btn-login button{
+     align-self: center;
+     background-color: #7CB342;
+     font-size: 2em;
+     width: 30% ;
+     border-radius: 30px;    
+ }
+ 
+ a:link{
+     text-decoration: none;
+ }
+ .link_cadastro a{
+     display: flex;
+     justify-content: center;
+     text-align: center;
+     color: rgb(82, 87, 92);
+     font-weight: bold;
+     margin-top: 2%;
+     margin-bottom: 2%;
+     font-size: 1em;
+ }
+ 
+
 footer{
     margin-top:40px;
     display:flex;
