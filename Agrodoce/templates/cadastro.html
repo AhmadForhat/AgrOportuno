@@ -3,7 +3,7 @@
 
 {% block content %}
 
-    <h1>Faça seu cadastro</h1>
+    <h2 class="h2-cadastro">Faça seu cadastro</h2>
     {% if formulario %}
     <form method="POST">
         {% csrf_token %}
@@ -14,5 +14,6 @@
     {% if msg %}
         <h2>{{msg}}</h2>
     {% endif %}
+    <div><img src="../static/img/contato.png" alt=""></div>
 
 {% endblock %}
