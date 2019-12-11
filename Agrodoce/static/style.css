@@ -30,6 +30,7 @@ nav {
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 200;
 }
 
 .navAtivo{
@@ -266,12 +267,13 @@ form {
 
 form input {
     width: 400%;
-    height: 35px;
     font-size: 18px;
     color: #7CB342;
     border-radius: 20px;
     border: 8px solid #7CB342;
     background-color: #F3EDE4;
+    padding: 5%;
+    outline: none;
 }
 
 form label{
@@ -282,14 +284,15 @@ form label{
 }
 
 form select {
-    width: 408%;
-    height: 55px;
+    width: 415%;
     border-radius: 20px;
     border: 8px solid #7CB342;
     font-size: 20px;
     color: #7CB342;
     background-color: #F3EDE4;
     text-align: center;
+    padding: 5%;
+    outline: none;
 }
 
 form button{
@@ -312,7 +315,54 @@ form button{
     margin-top: 60px;
 }
 
+.sobreSobre{
+    margin-top: 5%;
+}
 
+.ideias{
+    width: 100%;
+}
+
+.container-ideias{
+    display:flex;
+    justify-content: space-around;
+    align-content: center;
+    text-align: center;
+}
+
+.container-ideias img{
+    margin-top: 3%;
+    width: 250px;
+}
+
+.container-ideias p{
+    font-size: 22px;
+    max-width: 50%;
+    margin-left: 25%;
+}
+
+.servicos h2{
+    margin:0;
+    margin-bottom: 60px;
+    margin-top: 30px;
+}
+
+.container-servicos{
+    display: flex;
+}
+
+.servicos-texto {
+    margin:0;
+    max-width: 550px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+.servicos-texto h3{
+    color: #7CB342;
+    font-family: 'Dancing Script', cursive;
+    font-size: 42px;
+}
 
 .none{
     display:none;
@@ -322,3 +372,18 @@ form button{
     display:block;
 }
 
+.ativo{
+    display:block !important;
+    animation: show .5s forwards;
+  }
+  
+  @keyframes show {
+    from{
+      opacity: 0;
+      transform: translate3d(-30px,0,0)
+    }
+    to{
+      opacity:1;
+      transform: translate3d(0,0,0)
+    }
+}
