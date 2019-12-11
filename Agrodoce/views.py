@@ -31,3 +31,12 @@ def cadastro(request):
         'formulario' : form
     }
     return render (request , 'cadastro.html' , context)
+
+
+
+def produtos(request):
+    lista_de_produtos = Produto.objects.filter()
+    context = {
+        'produtos ' : lista_de_produtos
+    }
+    return render (request, 'produto.html',context)
