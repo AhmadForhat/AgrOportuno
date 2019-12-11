@@ -1,0 +1,15 @@
+{% extends 'index.html' %}
+{% load static %}
+
+{% block content %}
+    <h2>Produtos</h2>
+
+    {% for produto in produtos%}
+    <div>
+        <img src="../{{ produto.imagem.url }}" alt="" class = "produto-imagem">
+        <p>{{produto.nome_produto}}</p>
+        <p>{{produto.preco}}</p>
+    </div>
+    {% endfor %}
+{% endblock %}
+

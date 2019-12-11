@@ -15,3 +15,24 @@ class Cadastro(models.Model):
 
     def __str__ (self):
         return self.nome
+
+
+class Produto(models.Model):
+    tipo_de_produto = [
+        ('Maquina','Maquina'),
+        ('Legumes','Legumes'),
+        ('Frutas','Frutas'),
+    ]
+    tipo_de_paagmento = [
+        ('avista','Pagamento á vista'),
+        ('P2','Parcelado em 2x'),
+        ('P3','Parcelado em 3x'),
+    ]
+
+    nome_produto = models.CharField(max_length=50)
+    preco = models.DecimalField(decimal_places=2,max_digits=1000000,default=50)
+    imagem = models.ImageField(upload_to='')
+
+
+    def __str__(self):
+        return self.nome
