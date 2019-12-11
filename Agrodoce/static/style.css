@@ -13,7 +13,7 @@ h2 {
     margin-left: 5%;
 }
 
-h3 {
+h3 { 
     font-size:24px;
     color: #707070;
 }
@@ -104,7 +104,7 @@ button:hover{
 }
 
 .slide-home img{
-    width: 80%;
+    width: 90%;
 }
 
 .bolinhas{
@@ -112,6 +112,7 @@ button:hover{
     display:flex;
     justify-content: center;
     align-items: center;
+    margin-right: 2%;
 }
 
 .bolinha{
@@ -128,9 +129,9 @@ button:hover{
     background-color: #FFBB5E;
 }
 
-.sobreHome button{
-    width: 25%;
-    height: 65px;
+.sobreHome a button{
+    width: 300px;
+    height: 60px;
 }
 
 .setas{
@@ -250,19 +251,74 @@ footer{
     margin-top: 7%;
 }
 
+.container-cadastro{
+    display:flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
 form {
     display:flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    margin-left:90px;
+    text-align: left;
 }
 
 form input {
-    width: 80%;
-    height: 25px;
+    width: 400%;
+    height: 35px;
+    font-size: 18px;
+    color: #7CB342;
+    border-radius: 20px;
+    border: 8px solid #7CB342;
+    background-color: #F3EDE4;
+}
+
+form label{
+    font-size:140%;
+    color:#DF9633;
+    margin-bottom: 15px;
+    margin-top: 15px;
 }
 
 form select {
-    width: 80%;
-    height: 35px;
+    width: 408%;
+    height: 55px;
+    border-radius: 20px;
+    border: 8px solid #7CB342;
+    font-size: 20px;
+    color: #7CB342;
+    background-color: #F3EDE4;
+    text-align: center;
 }
+
+form button{
+    margin-top: 30px;
+    margin-left: ;
+    width: 250px;
+}
+
+.mensagem-final{
+    margin-left: 90px;
+}
+
+.mensagem-final p{
+    font-size: 22px;
+    color: #7CB342;
+}
+
+.mensagem-final button{
+    width: 320px;
+    margin-top: 60px;
+}
+
+
+
+.none{
+    display:none;
+}
+
+.ativo{
+    display:block;
+}
+

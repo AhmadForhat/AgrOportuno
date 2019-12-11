@@ -4,16 +4,23 @@
 {% block content %}
 
     <h2 class="h2-cadastro">Faça seu cadastro</h2>
-    {% if formulario %}
-    <form method="POST">
-        {% csrf_token %}
-        {{formulario}}
-        <button>Cadastrar</button>
-    </form>
-    {% endif %}
-    {% if msg %}
-        <h2>{{msg}}</h2>
-    {% endif %}
-    <div><img src="../static/img/contato.png" alt=""></div>
+    <section class="container-cadastro">
+        <div>
+        {% if formulario %}
+            <form method="POST">
+                {% csrf_token %}
+                {{formulario}}
+                <button>Cadastrar</button>
+            </form>
+            {% endif %}
+            {% if msg %}
+                <div class="mensagem-final">
+                    <p>{{msg}}</p>
+                    <a href="/produto"><button>Acessar o site</button></a>
+                </div>
+            {% endif %}
+        </div>
+        <div class="img-cadastro"><img src="../static/img/contato.png" alt=""></div>
+    </section>
 
 {% endblock %}
