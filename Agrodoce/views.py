@@ -35,8 +35,8 @@ def cadastro(request):
 
 
 def produtos(request):
-    lista_de_produtos = Produto.objects.filter()
+    lista_produtos = Produto.objects.all()
     context = {
-        'produtos ' : lista_de_produtos
+        'produtos ' : lista_produtos
     }
     return render (request, 'produto.html',context)

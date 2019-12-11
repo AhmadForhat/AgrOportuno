@@ -4,12 +4,13 @@
 {% block content %}
     <h2>Produtos</h2>
 
-    {% for produto in produtos%}
+    {% for produto in produtos %}
     <div>
-        <img src="../{{ produto.imagem.url }}" alt="" class = "produto-imagem">
-        <p>{{produto.nome_produto}}</p>
+        <img src="../{{ produtos.imagem.url }}" alt="" class = "produto-imagem">
+        <p>{{produto.nome}}</p>
         <p>{{produto.preco}}</p>
     </div>
     {% endfor %}
+    
 {% endblock %}
 

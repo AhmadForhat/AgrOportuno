@@ -23,15 +23,18 @@ class Produto(models.Model):
         ('Legumes','Legumes'),
         ('Frutas','Frutas'),
     ]
-    tipo_de_paagmento = [
+    tipo_de_pagmento = [
         ('avista','Pagamento á vista'),
         ('P2','Parcelado em 2x'),
         ('P3','Parcelado em 3x'),
     ]
 
-    nome_produto = models.CharField(max_length=50)
+    nome = models.CharField(max_length=50)
+    tipo = models.CharField(max_length = 10 , choices= tipo_de_produto, default=1)
     preco = models.DecimalField(decimal_places=2,max_digits=1000000,default=50)
+    negociacao = models.CharField(max_length = 20 , choices = tipo_de_pagmento)
     imagem = models.ImageField(upload_to='')
+
 
 
     def __str__(self):
