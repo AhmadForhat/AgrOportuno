@@ -1,1 +1,1 @@
-web: gunicorn Agrodoce.wsgi
+web: gunicorn DemodayAgro.wsgi
