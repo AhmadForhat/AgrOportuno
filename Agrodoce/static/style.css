@@ -418,17 +418,17 @@ form button{
   }
 
 .mapa{
-    margin-top: 50px;
+    margin-top: 80px;
     display:flex;
     justify-content: space-around;
 }
 
 .mapa iframe{
+    margin-top:50px;
     width: 900px;
     height: 450px;
+    margin-bottom: 70px;
 }
-
-
   
   @keyframes show {
     from{
