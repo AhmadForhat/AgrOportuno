@@ -1,1 +1,1 @@
-web: gunicorn agroportuno.wsgi
+web: gunicorn Agrodoce.wsgi
