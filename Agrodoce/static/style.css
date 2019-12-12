@@ -364,6 +364,46 @@ form button{
     font-size: 42px;
 }
 
+.suaMensagem h2{
+    margin-top: 130px;
+}
+
+.mensagem{
+    display:flex;
+    justify-content: space-around;
+}
+
+.escrever{
+    display:flex;
+    flex-direction: column;
+    width: 800px;
+
+}
+
+.escrever input{
+    width: 100%;
+    padding: 2%;
+    border: solid #7CB342 8px;
+    border-radius: 20px;
+    outline: none;
+    color: #7CB342;
+    font-size: 18px;
+    background-color: #F3EDE4;
+}
+
+.escrever label{
+    font-size: 24px;
+    color: #DD8D1F;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.escrever button{
+    margin-top:40px;
+    width: 250px;
+    height: 60px;
+}
+
 .none{
     display:none;
 }

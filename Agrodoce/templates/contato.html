@@ -1,2 +1,64 @@
 {% extends 'index.html' %}
 {% load static %}
+
+{% block content %}
+
+<section class="suaMensagem">
+    <h2>Mande Sua Mensagem</h2>
+    <div class="mensagem">
+        <div class="escrever">
+                <label>E-mail</label>
+                <input type="email"></input>
+                <label>Escreva seu texto</label>
+                <input type="text2"></input>
+                <button>Enviar</button>
+        </div>
+        <div class="imagem-mensagem">
+            <img src="../static/img/contato-client.png" alt="">
+        </div>
+    </div>
+</section>
+
+<section class="contato-home">
+    <h2>Cantato</h2>
+    <div class="time">
+        <div class="mud">
+            <img src="../static/img/foto-mud.png" alt="">
+            <h3>Ahmad Forhat</h3>
+            <div class="redes-sociais">
+                <a href="https://github.com/AhmadForhat" target="_blank"><img src="../static/img/github.png" alt=""></a>
+                <a href="https://www.linkedin.com/in/ahmad-forhat" target="_blank"><img src="../static/img/linkedin.png" alt=""></a>
+                <a href="mailto:ahmad.forhat@gmail.com" target="_blank"><img src="../static/img/gmail.png" alt=""></a>
+            </div>
+        </div>
+        <div class="gui">
+            <img src="../static/img/foto-guilherme.png" alt="">
+            <h3>Guilherme Andrade</h3>
+            <div class="redes-sociais">
+                <a href="https://github.com/GuilhermaoAndrade" target="_blank"><img src="../static/img/github.png" alt=""></a>
+                <a href="" target="_blank"><img src="../static/img/linkedin.png" alt=""></a>
+                <a href="malito:guilherme.souza102@fatec.sp.gov.br" target="_blank"><img src="../static/img/gmail.png" alt=""></a>
+            </div>
+        </div>
+        <div class="renata">
+            <img src="../static/img/foto-renata.png" alt="">
+            <h3>Renata Mizuno</h3>
+            <div class="redes-sociais">
+                <a href="https://github.com/renatamizuno1" target="_blank"><img src="../static/img/github.png" alt=""></a>
+                <a href="" target="_blank"><img src="../static/img/linkedin.png" alt=""></a>
+                <a href="" target="_blank"><img src="../static/img/gmail.png" alt=""></a>
+            </div>
+        </div>
+        <div class="paulo">
+            <img src="../static/img/foto-paulo.png" alt="">
+            <h3>Paulo Henrique Beto</h3>
+            <div class="redes-sociais">
+                <a href="https://github.com/Paulohenrique-beto" target="_blank"><img src="../static/img/github.png" alt=""></a>
+                <a href="https://www.linkedin.com/in/paulo-h-9645a59a/" target="_blank"><img src="../static/img/linkedin.png" alt=""></a>
+                <a href="mailto:betopaulohenrique@gmail.com" target="_blank"><img src="../static/img/gmail.png" alt=""></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock%}
