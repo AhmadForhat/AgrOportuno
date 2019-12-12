@@ -213,7 +213,7 @@ button:hover{
      justify-content: center;
  }
  
- .btn-login button{
+ .btn-loguinho button{
      align-self: center;
      background-color: #7CB342;
      font-size: 2em;
@@ -428,6 +428,23 @@ form button{
     width: 900px;
     height: 450px;
     margin-bottom: 70px;
+}
+
+.container-produtos{
+    margin-top: 110px;
+}
+
+.container-produtos button{
+    width: 300px;
+    margin-left: 28%;
+}
+
+.container-produtos p{
+    margin-left: 31%;
+}
+
+.produtos{
+    margin-left: 90px;
 }
   
   @keyframes show {

@@ -2,15 +2,24 @@
 {% load static %}
 
 {% block content %}
-    <h2>Produtos</h2>
+    <section class="container-produtos">
+        <h2>Produtos</h2>
 
-    {% for produto in produtos %}
-    <div>
-        <img src="../{{ produtos.imagem.url }}" alt="" class = "produto-imagem">
-        <p>{{produto.nome}}</p>
-        <p>{{produto.preco}}</p>
-    </div>
-    {% endfor %}
+        <div class="produtos">
+            <div class="produto1">
+                <h3>Tomates do Pedro</h3>
+                <img src="../static/img/produto1.png" alt="">
+                <p>Seu Pedro - (11) 99999-4444</p>
+                <button>Compre!</button>
+            </div>
+            <div class="produto2">
+                <h3>Banana do João</h3>
+                <img src="../static/img/banana.png" alt="">
+                <p>Seu João - (11) 99999-2313</p>
+                <button>Compre!</button>
+            </div>
+        </div>
+    </section>
     
 {% endblock %}
 
