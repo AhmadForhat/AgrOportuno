@@ -368,7 +368,7 @@ form button{
     margin-top: 130px;
 }
 
-.mensagem{
+.escrevendomensagem{
     display:flex;
     justify-content: space-around;
 }
@@ -416,6 +416,19 @@ form button{
     display:block !important;
     animation: show .5s forwards;
   }
+
+.mapa{
+    margin-top: 50px;
+    display:flex;
+    justify-content: space-around;
+}
+
+.mapa iframe{
+    width: 900px;
+    height: 450px;
+}
+
+
   
   @keyframes show {
     from{
