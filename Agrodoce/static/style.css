@@ -268,13 +268,13 @@ form {
 }
 
 form input {
-    width: 400%;
+    width: 1000px;
     font-size: 18px;
     color: #7CB342;
     border-radius: 20px;
     border: 8px solid #7CB342;
     background-color: #F3EDE4;
-    padding: 5%;
+    padding: 1.5%;
     outline: none;
 }
 
@@ -286,21 +286,21 @@ form label{
 }
 
 form select {
-    width: 415%;
+    width: 1050px;
     border-radius: 20px;
     border: 8px solid #7CB342;
     font-size: 20px;
     color: #7CB342;
     background-color: #F3EDE4;
     text-align: center;
-    padding: 5%;
+    padding: 1.5%;
     outline: none;
 }
 
 form button{
     margin-top: 30px;
-    margin-left: ;
     width: 250px;
+    height: 70px;
 }
 
 .mensagem-final{
@@ -479,12 +479,56 @@ form button{
     .container-ideias h3{
         max-width: 400px;
     }
+    .escrevendomensagem input{
+        margin-left: 0;
+    }
+
+    .mapa iframe{
+        width: 500px;
+    }
+  }
+
+@media only screen and (max-width: 1600px) {
+
+.container-cadastro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}}
+
+  @media only screen and (max-width: 1400px) {
+      .escrevendomensagem{
+          display: flex;
+          flex-direction: column;
+          margin-left: 20%;
+    }
+      form select {
+        width: 360px;
+    }
+
+        form input{
+        width: 340px;
+    }
+      .escrevendomensagem input{
+        width: 50%;
+    }
+    .mapa{
+        display: flex;
+        flex-direction: column; 
+        align-content: center;
+        text-align: center;
+    }
   }
 
   @media only screen and (max-width: 1200px) {
     .time{
         display: flex;
         flex-direction: column;
+    }
+    .h2-cadastro{
+        margin-top:120px
     }
     h2{
         margin-top:100px;
@@ -498,6 +542,7 @@ form button{
         display:flex;
         flex-direction: column;
         justify-content: center;
+        text-align: center;
         margin-left: 20%;
     }
   }
